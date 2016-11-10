@@ -55,7 +55,20 @@ div {
 }
 
 /**********  MAIN STYLES **********/
-
+@media (max-width: 768px) {
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+	    margin-bottom: 53px;
+	}
+	.navbar {
+		border: none;
+	}
+	.navbar-default .navbar-brand {
+	    color: #777;
+	    position: relative;
+	    left: 50%;
+	    transform: translatex(-50%);
+	}
+}
 @media (min-width: 768px) {
 	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
 	    margin-right: 0;
@@ -67,6 +80,7 @@ div {
 		background-color: #eee;
 		border: none;
 		height: 100px;
+		margin-bottom: 150px;
 	}
 	.navbar-default:before {
 		content: '';
@@ -101,6 +115,5 @@ div {
 	width: auto;
 }
 .wip h1 {
-	margin-top: 300px;
 	font-size: 60px;
 }
