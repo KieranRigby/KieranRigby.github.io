@@ -1,0 +1,282 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, hr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+hr {
+    background-color: #aaa;
+}
+body {
+    line-height: 1;
+    text-align: center;
+    overflow-x: hidden;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body {
+    font-family: sans-serif;
+}
+
+div {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/**********  MAIN STYLES **********/
+.navbar-default {
+    background-color: #2196f3;
+}
+.navbar-default:before {
+    background-color: #2196f3;
+}
+@media (max-width: 768px) {
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+        margin-bottom: 53px;
+    }
+    .navbar {
+        border: none;
+    }
+    .navbar-default .navbar-brand {
+        color: #fff;
+        position: relative;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+    .navbar-default .navbar-nav>li>a {
+        color: white;
+    }
+}
+@media (min-width: 768px) {
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+        margin-right: 0;
+        margin-left: 0;
+        position: relative;
+        left: 35%;
+    }
+    .navbar-default {
+        background-color: #2196f3;
+        border: none;
+        height: 100px;
+        margin-bottom: 150px;
+    }
+    .navbar-default:before {
+        content: '';
+        position: absolute;
+        top: -99px;
+        left: 0;
+        bottom: 0;
+        overflow: visible;
+        width: 100%;
+        height: 250px;
+        background: #2196f3;
+        z-index: -1;
+        -webkit-transform: skewY(-3deg);
+        -moz-transform: skewY(-3deg);
+        -ms-transform: skewY(-3deg);
+        -o-transform: skewY(-3deg);
+        transform: skewY(-3deg);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: initial;
+    }
+    .navbar-nav li {
+        font-size: 31px;
+        text-transform: uppercase;
+        padding-top: 20px;
+    }
+    .padding {
+        padding-top: 20px;
+    }
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.logo {
+    height: 70px;
+    width: auto;
+}
+.info {
+    margin-top: 40px;
+}
+.info h2 {
+    font-size: 60px;
+}
+
+.title {
+    margin-bottom: 50px;
+}
+p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.download {
+    background-color: #2196f3;
+    color: white;
+    padding: 20px 40px;
+    font-size: 20px;
+    transition: all 0.5s;
+    border: 2px solid white;
+    margin-top: 20px;
+}
+.download:hover {
+    color: black;
+    text-decoration: none;
+    background-color: #1976d2;
+
+}
+.background-wrapper {
+    background-color: #2196f3;
+    border: none;
+    height: 100px;
+    margin-bottom: 150px;
+    margin-top: 260px;
+}
+.background-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 800px;
+    left: 0;
+    bottom: 0;
+    overflow: visible;
+    width: 100%;
+    height: 500px;
+    background: #2196f3;
+    z-index: -1;
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    -o-transform: skewY(-3deg);
+    transform: skewY(-3deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: initial;
+}
+ul {
+    margin-bottom: 65px;
+}
+
+/**** OVERLAY ****/
+#overlay {
+    display: none;
+    position: fixed;
+    width: 65%;
+
+    /** Center the div on the x and y **/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    /** overlay it always **/
+    z-index: 9999;
+
+    text-align: center;
+    background-color: #16A085;
+    color: #eee;
+    border-radius: 10px;
+    padding: 10px;
+}
+.overlay-content {
+    margin-bottom: 10%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.overlayHeader {
+    margin: 30px 0px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #eee;
+    font-weight: bold;
+}
+.overlayLogo {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+    transform: translateX(-50%);
+}
+#closeOverlay {
+    position: relative;
+    float: right;
+    top: 10px;
+    right: 10px;
+}
+.overlay-input {
+    width: 50%;
+    margin: 0 auto;
+}
+.subscribeThanks {
+    background-color: #1ABC9C;
+    width: 200px;
+    margin: 10px auto;
+    border-radius: 5px;
+    display: none;
+}
+
+/** Used to addClass to the overlay **/
+.show {
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    .heroImage {
+        display: none;
+    }
+    .logos > .container > div {
+        display: inline-block;
+    }
+    #overlay {
+        height: 90vh;
+        width: 80%;
+    }
+    .overlay-input {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 481px) {
+    .overlayHeader {
+        font-size: 1.6em;
+        margin: 15px;
+        padding-bottom: 15px;
+    }
+    #closeOverlay {
+        top: 5px;
+        right: 5px;
+    }
+}
+.scroller {
+	margin-bottom: 300px;
+}
+.padding {
+	margin-bottom: 10px;
+}
