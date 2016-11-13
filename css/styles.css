@@ -48,6 +48,7 @@ table {
 }
 body {
 	font-family: sans-serif;
+	overflow-x: hidden;
 }
 
 div {
@@ -114,6 +115,41 @@ div {
 	height: 70px;
 	width: auto;
 }
+
+
+/* PROJECTS */
+.projects h2 {
+	font-size: 60px;
+	font-weight: bold;
+	margin-bottom: 70px;
+}
+.projectTitle {
+	font-size: 3em;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+.projectInfo {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 50px;
+}
+.projectImage {
+	height: 178px;
+	width: auto;
+	-webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.33);
+	-moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.33);
+	box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.33);
+}
+.projectLink {
+	color: black;
+	font-size: 20px;
+	background-color: #eee;
+	padding: 20px 30px;
+
+
+}
 .wip h1 {
 	font-size: 60px;
+	margin-top: 300px;
 }
