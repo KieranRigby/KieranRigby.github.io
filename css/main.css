@@ -806,6 +806,10 @@ td, th {
   .no-flex-xs {
     display: block !important;
   }
+
+  .banner-area img {
+    display: none;
+  }
 }
 
 .row.no-margin {
